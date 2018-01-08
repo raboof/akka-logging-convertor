@@ -1,0 +1,391 @@
+(?<host>[^|]+)\|(?<clock>[^|]+)\|(?<event>.*)\n
+====
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:43.861[0;39m [33mROOT[0;39m  - Using configurator: play.api.libs.logback.LogbackLoggerConfigurator@4b9df8a
+gw-1001.log|{"gw-1001.log": 1514833200}|WARN [32m20:06:44.049[0;39m [33mapplication[0;39m  - /etc/app/application.conf: 119: user is deprecated, use username instead
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:44.060[0;39m [33mapplication[0;39m  - Creating Pool for datasource 'default'
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:44.406[0;39m [33mDefaultDBApi[0;39m  - Database [default] connected at jdbc:mysql://localhost:3306/app?cachePrepStmts=true&cacheCallableStmts=true&cacheServerConfiguration=true&useLocalSessionState=true&elideSetAutoCommits=true&alwaysSendSetIsolation=false&enableQueryTimeouts=false&connectionAttributes=none&verifyServerCertificate=false&useSSL=false&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:45.627[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/log1-Slf4jLogger actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:45.629[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/log1-Slf4jLogger actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:45.667[0;39m [33mSlf4jLogger[0;39m  - Slf4jLogger started
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:45.688[0;39m [33mEventStream[0;39m  - logger log1-Slf4jLogger started
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:45.697[0;39m [33mEventStream[0;39m  - Default Loggers started
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:45.706[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remoting-terminator actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:45.707[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remoting-terminator actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:46.666[0;39m [33mArteryTransport(akka://myapp)[0;39m  - Started embedded media driver in directory [/dev/shm/aeron-app-myapp-f980099f-ff7e-4fab-8f4f-f62cb1a520b5]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:46.880[0;39m [33mArteryTransport(akka://myapp)[0;39m  - Remoting started; listening on address: [akka://myapp@gw-1001.ad1.myvcn.com:2500] with UID [-8206788448652082880]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:46.906[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] - Starting up...
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:46.913[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/cluster actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:46.914[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/cluster actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:46.994[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/clusterEventBusListener actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:46.995[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/clusterEventBusListener actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:47.063[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] - Registered cluster JMX MBean [akka:type=Cluster]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:47.064[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] - Started up successfully
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.124[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-watcher actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.124[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-watcher actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.126[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-deployment-watcher actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.127[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-deployment-watcher actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.132[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/eventStreamUnsubscriber-1 actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.133[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/eventStreamUnsubscriber-1 actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|WARN [32m20:06:47.153[0;39m [33mAutoDown[0;39m  - Don't use auto-down feature of Akka Cluster in production. See 'Auto-downing (DO NOT USE)' section of Akka Cluster documentation.
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.161[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/distributedPubSubMediator actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.162[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/distributedPubSubMediator actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.168[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/receptionist actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.169[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/receptionist actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.192[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound control stream to [akka://myapp@gw-2001.ad2.myvcn.com:2500]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.290[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound message stream to [akka://myapp@gw-2001.ad2.myvcn.com:2500]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.306[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.remote.serialization.ArteryMessageSerializer] for message [akka.remote.artery.OutboundHandshake$HandshakeReq]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.334[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound large message stream to [akka://myapp@gw-2001.ad2.myvcn.com:2500]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.349[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.350[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.384[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound control stream to [akka://myapp@gw-3001.ad3.myvcn.com:2500]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.384[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.428[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound message stream to [akka://myapp@gw-3001.ad3.myvcn.com:2500]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.430[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.469[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound large message stream to [akka://myapp@gw-3001.ad3.myvcn.com:2500]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.470[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.512[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.674[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.2.5:39020 session -1749213757
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.708[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.3.3:48886 session -794676882
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.749[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.2.5:39020 session -1749213755
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.785[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.786[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.2.5:39020 session -1749213753
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.799[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.808[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.823[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.remote.serialization.ArteryMessageSerializer] for message [akka.remote.artery.OutboundHandshake$HandshakeRsp]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.828[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.829[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.840[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.840[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.843[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.3.3:48886 session -794676880
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.849[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.850[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoin$]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.858[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundActorRefCompression for originUid [3514169467659191953]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.861[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundManifestCompression for originUid [3514169467659191953]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.865[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp/]] from [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.866[0;39m [33mEncoder[0;39m  - sending remote message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/]] from [Actor[akka://myapp/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:47.869[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] - Received InitJoin message from [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]], but this node is not initialized yet
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.869[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundManifestCompression for originUid [7580044734499881023]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.870[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.870[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoinNack]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.874[0;39m [33mEncoder[0;39m  - sending remote message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/]] from [Actor[akka://myapp/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.881[0;39m [33mEncoder[0;39m  - sending remote message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]] from [Actor[akka://myapp/system/cluster/core/daemon#1150277362]]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.972[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.3.3:48886 session -794676877
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:47.973[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:48.098[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]] from [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon#2043566707]]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:48.098[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] - Received InitJoinNack message from [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon#2043566707]] to [akka://myapp@gw-1001.ad1.myvcn.com:2500]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:48.170[0;39m [33mEncoder[0;39m  - sending remote message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/]] from [Actor[akka://myapp/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:48.267[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundActorRefCompression for originUid [7580044734499881023]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:48.267[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp/]] from [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:48.268[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] - Received InitJoin message from [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]], but this node is not initialized yet
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:48.269[0;39m [33mEncoder[0;39m  - sending remote message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]] from [Actor[akka://myapp/system/cluster/core/daemon#1150277362]]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:48.290[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]] from [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon#-728755459]]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:48.291[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]] from [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon#-728755459]]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:48.291[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] - Received InitJoinNack message from [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon#-728755459]] to [akka://myapp@gw-1001.ad1.myvcn.com:2500]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:48.329[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] - Node [akka://myapp@gw-1001.ad1.myvcn.com:2500] is JOINING, roles [gateway, stores, dc-default]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:48.330[0;39m [33mCrossDcHeartbeatSender[0;39m  - Initialized cross-dc heartbeat sender as DORMANT in DC: [default]
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:48.413[0;39m [33mCrossDcHeartbeatSender[0;39m  - Remaining DORMANT; others in default handle heartbeating other DCs
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.354[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.355[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.384[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding/storesCoordinator actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.391[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding/stores actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.449[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.450[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.451[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.453[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.454[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|WARN [32m20:06:49.496[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.515[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/healthchecker actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.516[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/healthchecker actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.519[0;39m [33mJournalComponents$[0;39m  - creating read journal: jdbc-read-journal
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.520[0;39m [33mJournalComponents$[0;39m  - connection string: jdbc:mysql://localhost:3306/app?cachePrepStmts=true&cacheCallableStmts=true&cacheServerConfiguration=true&useLocalSessionState=true&elideSetAutoCommits=true&alwaysSendSetIsolation=false&enableQueryTimeouts=false&connectionAttributes=none&verifyServerCertificate=false&useSSL=false&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.526[0;39m [33mPersistenceQuery[0;39m  - Create plugin: jdbc-read-journal akka.persistence.jdbc.query.JdbcReadJournalProvider
+gw-1001.log|{"gw-1001.log": 1514833200}|WARN [32m20:06:49.545[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.554[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/recoveryPermitter actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.554[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/recoveryPermitter actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:49.557[0;39m [33mPersistence(akka://myapp)[0;39m  - Auto-starting journal plugin `jdbc-journal`
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.559[0;39m [33mPersistence(akka://myapp)[0;39m  - Create plugin: jdbc-journal akka.persistence.jdbc.journal.JdbcAsyncWriteJournal
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.576[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-journal actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.577[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-journal actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:49.589[0;39m [33mPersistence(akka://myapp)[0;39m  - Auto-starting snapshot store `jdbc-snapshot-store`
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.589[0;39m [33mPersistence(akka://myapp)[0;39m  - Create plugin: jdbc-snapshot-store akka.persistence.jdbc.snapshot.JdbcSnapshotStore
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.592[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-snapshot-store actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:49.593[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-snapshot-store actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|WARN [32m20:06:49.615[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-1001.log|{"gw-1001.log": 1514833200}|WARN [32m20:06:49.618[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.262[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.262[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.404[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master/PoolInterfaceActor-0 actor: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.416[0;39m [33mPoolGateway[0;39m  - (Re-)starting host connection pool to dev.identity.com:443
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:50.452[0;39m [33mPlay[0;39m  - Application started (Prod)
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.609[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-TCP/selectors router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.650[0;39m [33mTcpListener[0;39m  - Successfully bound to /0.0.0.0:9000
+gw-1001.log|{"gw-1001.log": 1514833200}|INFO [32m20:06:50.663[0;39m [33mAkkaHttpServer[0;39m  - Listening for HTTP on /0.0.0.0:9000
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.710[0;39m [33mPoolGateway[0;39m  - InputBuffer (max-open-requests = 32) now filled with 1 request after enqueuing GET  Empty
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.717[0;39m [33mPoolGateway[0;39m  - [0] Unconnected -> Loaded(1)
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.732[0;39m [33mPoolGateway[0;39m  - [0] <unconnected> Establishing connection...
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.780[0;39m [33mPoolGateway[0;39m  - [0] <unconnected> pushing request to connection: GET / Empty
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.798[0;39m [33mTcpOutgoingConnection[0;39m  - Resolving dev.identity.com before connecting
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.819[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.820[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.821[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.823[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.827[0;39m [33mSimpleDnsManager[0;39m  - Resolution request for dev.identity.com from Actor[akka://myapp/system/IO-TCP/selectors/$a/1#397517372]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.847[0;39m [33mTcpOutgoingConnection[0;39m  - Attempting connection to [dev.identity.com/107.23.161.90:443]
+gw-1001.log|{"gw-1001.log": 1514833200}|DEBUG [32m20:06:50.851[0;39m [33mTcpOutgoingConnection[0;39m  - Connection established to [dev.identity.com:443]
+gw-1001.log|{"gw-1001.log": 1514833200}|WARN [32m20:06:51.087[0;39m [33mActorSystemImpl[0;39m  - Illegal header: Illegal 'strict-transport-security' header: Invalid input 'EOI', expected OWS or token0 (line 1, column 37): max-age=15724800; includeSubDomains;
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:43.906[0;39m [33mROOT[0;39m  - Using configurator: play.api.libs.logback.LogbackLoggerConfigurator@4b9df8a
+gw-2001.log|{"gw-2001.log": 1514833200}|WARN [32m20:06:44.088[0;39m [33mapplication[0;39m  - /etc/app/application.conf: 119: user is deprecated, use username instead
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:44.098[0;39m [33mapplication[0;39m  - Creating Pool for datasource 'default'
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:44.460[0;39m [33mDefaultDBApi[0;39m  - Database [default] connected at jdbc:mysql://localhost:3306/app?cachePrepStmts=true&cacheCallableStmts=true&cacheServerConfiguration=true&useLocalSessionState=true&elideSetAutoCommits=true&alwaysSendSetIsolation=false&enableQueryTimeouts=false&connectionAttributes=none&verifyServerCertificate=false&useSSL=false&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:45.890[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/log1-Slf4jLogger actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:45.892[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/log1-Slf4jLogger actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:45.925[0;39m [33mSlf4jLogger[0;39m  - Slf4jLogger started
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:45.951[0;39m [33mEventStream[0;39m  - logger log1-Slf4jLogger started
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:45.959[0;39m [33mEventStream[0;39m  - Default Loggers started
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:45.960[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remoting-terminator actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:45.961[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remoting-terminator actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:46.919[0;39m [33mArteryTransport(akka://myapp)[0;39m  - Started embedded media driver in directory [/dev/shm/aeron-app-myapp-6f33bc91-080b-43b0-ba8f-73853e91bc8a]
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:47.182[0;39m [33mArteryTransport(akka://myapp)[0;39m  - Remoting started; listening on address: [akka://myapp@gw-2001.ad2.myvcn.com:2500] with UID [3514169467659191953]
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:47.207[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-2001.ad2.myvcn.com:2500] - Starting up...
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.216[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/cluster actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.217[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/cluster actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.305[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.1.3:55469 session 143274418
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.309[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/clusterEventBusListener actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.310[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/clusterEventBusListener actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.360[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.377[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.1.3:55469 session 143274419
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.379[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:47.389[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-2001.ad2.myvcn.com:2500] - Registered cluster JMX MBean [akka:type=Cluster]
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:47.389[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-2001.ad2.myvcn.com:2500] - Started up successfully
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.424[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.1.3:55469 session 143274420
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.427[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.460[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-watcher actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.460[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-watcher actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.462[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-deployment-watcher actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.463[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-deployment-watcher actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.465[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound control stream to [akka://myapp@gw-1001.ad1.myvcn.com:2500]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.477[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/eventStreamUnsubscriber-1 actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.478[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/eventStreamUnsubscriber-1 actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|WARN [32m20:06:47.497[0;39m [33mAutoDown[0;39m  - Don't use auto-down feature of Akka Cluster in production. See 'Auto-downing (DO NOT USE)' section of Akka Cluster documentation.
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.537[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound control stream to [akka://myapp@gw-3001.ad3.myvcn.com:2500]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.543[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/distributedPubSubMediator actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.543[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/distributedPubSubMediator actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.550[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/receptionist actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.551[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/receptionist actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.634[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound message stream to [akka://myapp@gw-1001.ad1.myvcn.com:2500]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.635[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound message stream to [akka://myapp@gw-3001.ad3.myvcn.com:2500]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.646[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.remote.serialization.ArteryMessageSerializer] for message [akka.remote.artery.OutboundHandshake$HandshakeRsp]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.647[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.remote.serialization.ArteryMessageSerializer] for message [akka.remote.artery.OutboundHandshake$HandshakeReq]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.668[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.669[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.673[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound large message stream to [akka://myapp@gw-1001.ad1.myvcn.com:2500]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.673[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.704[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound large message stream to [akka://myapp@gw-3001.ad3.myvcn.com:2500]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.705[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.742[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.777[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.3.3:58916 session -794676881
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.778[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.778[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.779[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.788[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.797[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoin$]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.813[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.815[0;39m [33mEncoder[0;39m  - sending remote message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/]] from [Actor[akka://myapp/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.816[0;39m [33mEncoder[0;39m  - sending remote message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/]] from [Actor[akka://myapp/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.859[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.3.3:58916 session -794676879
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:47.924[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.3.3:58916 session -794676878
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.078[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundActorRefCompression for originUid [-8206788448652082880]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.080[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundManifestCompression for originUid [-8206788448652082880]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.084[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp/]] from [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]]
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:48.091[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-2001.ad2.myvcn.com:2500] - Received InitJoin message from [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]], but this node is not initialized yet
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.091[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoinNack]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.093[0;39m [33mEncoder[0;39m  - sending remote message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]] from [Actor[akka://myapp/system/cluster/core/daemon#2043566707]]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.094[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]] from [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon#1150277362]]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.096[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundManifestCompression for originUid [7580044734499881023]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.097[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.217[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.250[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.269[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundActorRefCompression for originUid [7580044734499881023]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.270[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp/]] from [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]]
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:48.271[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-2001.ad2.myvcn.com:2500] - Received InitJoin message from [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]], but this node is not initialized yet
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.272[0;39m [33mEncoder[0;39m  - sending remote message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]] from [Actor[akka://myapp/system/cluster/core/daemon#2043566707]]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:48.283[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]] from [Actor[akka://myapp@gw-3001.ad3.myvcn.com:2500/system/cluster/core/daemon#-728755459]]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.582[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.584[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.616[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding/storesCoordinator actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.624[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding/stores actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.702[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.704[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.705[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.706[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.707[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|WARN [32m20:06:49.758[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.782[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/healthchecker actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.782[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/healthchecker actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.787[0;39m [33mJournalComponents$[0;39m  - creating read journal: jdbc-read-journal
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.787[0;39m [33mJournalComponents$[0;39m  - connection string: jdbc:mysql://localhost:3306/app?cachePrepStmts=true&cacheCallableStmts=true&cacheServerConfiguration=true&useLocalSessionState=true&elideSetAutoCommits=true&alwaysSendSetIsolation=false&enableQueryTimeouts=false&connectionAttributes=none&verifyServerCertificate=false&useSSL=false&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.793[0;39m [33mPersistenceQuery[0;39m  - Create plugin: jdbc-read-journal akka.persistence.jdbc.query.JdbcReadJournalProvider
+gw-2001.log|{"gw-2001.log": 1514833200}|WARN [32m20:06:49.816[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.827[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/recoveryPermitter actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.828[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/recoveryPermitter actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:49.830[0;39m [33mPersistence(akka://myapp)[0;39m  - Auto-starting journal plugin `jdbc-journal`
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.833[0;39m [33mPersistence(akka://myapp)[0;39m  - Create plugin: jdbc-journal akka.persistence.jdbc.journal.JdbcAsyncWriteJournal
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.856[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-journal actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.856[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-journal actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:49.872[0;39m [33mPersistence(akka://myapp)[0;39m  - Auto-starting snapshot store `jdbc-snapshot-store`
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.873[0;39m [33mPersistence(akka://myapp)[0;39m  - Create plugin: jdbc-snapshot-store akka.persistence.jdbc.snapshot.JdbcSnapshotStore
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.877[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-snapshot-store actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:49.878[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-snapshot-store actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|WARN [32m20:06:49.901[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-2001.log|{"gw-2001.log": 1514833200}|WARN [32m20:06:49.904[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:50.543[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:50.544[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:50.663[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master/PoolInterfaceActor-0 actor: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:50.678[0;39m [33mPoolGateway[0;39m  - (Re-)starting host connection pool to dev.identity.com:443
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:50.752[0;39m [33mPlay[0;39m  - Application started (Prod)
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:50.897[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-TCP/selectors router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:50.936[0;39m [33mTcpListener[0;39m  - Successfully bound to /0.0.0.0:9000
+gw-2001.log|{"gw-2001.log": 1514833200}|INFO [32m20:06:50.945[0;39m [33mAkkaHttpServer[0;39m  - Listening for HTTP on /0.0.0.0:9000
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.013[0;39m [33mPoolGateway[0;39m  - InputBuffer (max-open-requests = 32) now filled with 1 request after enqueuing GET  Empty
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.022[0;39m [33mPoolGateway[0;39m  - [0] Unconnected -> Loaded(1)
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.045[0;39m [33mPoolGateway[0;39m  - [0] <unconnected> Establishing connection...
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.099[0;39m [33mPoolGateway[0;39m  - [0] <unconnected> pushing request to connection: GET / Empty
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.117[0;39m [33mTcpOutgoingConnection[0;39m  - Resolving dev.identity.com before connecting
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.137[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.138[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.138[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.140[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.145[0;39m [33mSimpleDnsManager[0;39m  - Resolution request for dev.identity.com from Actor[akka://myapp/system/IO-TCP/selectors/$a/1#1769256535]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.161[0;39m [33mTcpOutgoingConnection[0;39m  - Attempting connection to [dev.identity.com/54.236.96.61:443]
+gw-2001.log|{"gw-2001.log": 1514833200}|DEBUG [32m20:06:51.164[0;39m [33mTcpOutgoingConnection[0;39m  - Connection established to [dev.identity.com:443]
+gw-2001.log|{"gw-2001.log": 1514833200}|WARN [32m20:06:51.401[0;39m [33mActorSystemImpl[0;39m  - Illegal header: Illegal 'strict-transport-security' header: Invalid input 'EOI', expected OWS or token0 (line 1, column 37): max-age=15724800; includeSubDomains;
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:44.092[0;39m [33mROOT[0;39m  - Using configurator: play.api.libs.logback.LogbackLoggerConfigurator@4b9df8a
+gw-3001.log|{"gw-3001.log": 1514833200}|WARN [32m20:06:44.300[0;39m [33mapplication[0;39m  - /etc/app/application.conf: 119: user is deprecated, use username instead
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:44.312[0;39m [33mapplication[0;39m  - Creating Pool for datasource 'default'
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:44.612[0;39m [33mDefaultDBApi[0;39m  - Database [default] connected at jdbc:mysql://localhost:3306/app?cachePrepStmts=true&cacheCallableStmts=true&cacheServerConfiguration=true&useLocalSessionState=true&elideSetAutoCommits=true&alwaysSendSetIsolation=false&enableQueryTimeouts=false&connectionAttributes=none&verifyServerCertificate=false&useSSL=false&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:46.032[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/log1-Slf4jLogger actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:46.034[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/log1-Slf4jLogger actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:46.082[0;39m [33mSlf4jLogger[0;39m  - Slf4jLogger started
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:46.106[0;39m [33mEventStream[0;39m  - logger log1-Slf4jLogger started
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:46.116[0;39m [33mEventStream[0;39m  - Default Loggers started
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:46.129[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remoting-terminator actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:46.130[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remoting-terminator actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:47.033[0;39m [33mArteryTransport(akka://myapp)[0;39m  - Started embedded media driver in directory [/dev/shm/aeron-app-myapp-d5d77dfd-e0f5-4474-a501-f821d853b3d6]
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:47.238[0;39m [33mArteryTransport(akka://myapp)[0;39m  - Remoting started; listening on address: [akka://myapp@gw-3001.ad3.myvcn.com:2500] with UID [7580044734499881023]
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:47.263[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-3001.ad3.myvcn.com:2500] - Starting up...
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.271[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/cluster actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.272[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/cluster actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.347[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/clusterEventBusListener actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.347[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/clusterEventBusListener actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:47.406[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-3001.ad3.myvcn.com:2500] - Registered cluster JMX MBean [akka:type=Cluster]
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:47.406[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-3001.ad3.myvcn.com:2500] - Started up successfully
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.456[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-watcher actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.457[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-watcher actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.458[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-deployment-watcher actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.459[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/remote-deployment-watcher actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.471[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/eventStreamUnsubscriber-1 actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.472[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/eventStreamUnsubscriber-1 actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|WARN [32m20:06:47.501[0;39m [33mAutoDown[0;39m  - Don't use auto-down feature of Akka Cluster in production. See 'Auto-downing (DO NOT USE)' section of Akka Cluster documentation.
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.520[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/distributedPubSubMediator actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.521[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/distributedPubSubMediator actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.522[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.1.3:43595 session 143274421
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.530[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/receptionist actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.532[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/receptionist actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.539[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.1.3:43595 session 143274422
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.566[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound control stream to [akka://myapp@gw-1001.ad1.myvcn.com:2500]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.585[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.586[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.589[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.1.3:43595 session 143274423
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.591[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.669[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.2.5:43579 session -1749213756
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.672[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.remote.serialization.ArteryMessageSerializer] for message [akka.remote.artery.OutboundHandshake$HandshakeRsp]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.674[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.675[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound control stream to [akka://myapp@gw-2001.ad2.myvcn.com:2500]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.681[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound message stream to [akka://myapp@gw-1001.ad1.myvcn.com:2500]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.698[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.716[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound message stream to [akka://myapp@gw-2001.ad2.myvcn.com:2500]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.747[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.2.5:43579 session -1749213754
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.780[0;39m [33mDecoder[0;39m  - Decoded message but unable to record hits for compression as no remoteAddress known. No association yet?
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.782[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.782[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound large message stream to [akka://myapp@gw-1001.ad1.myvcn.com:2500]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.784[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.784[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.remote.serialization.ArteryMessageSerializer] for message [akka.remote.artery.OutboundHandshake$HandshakeReq]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.785[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.787[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.787[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.825[0;39m [33mAssociation(akka://myapp)[0;39m  - Starting outbound large message stream to [akka://myapp@gw-2001.ad2.myvcn.com:2500]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.825[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.835[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundActorRefCompression for originUid [3514169467659191953]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.837[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundManifestCompression for originUid [3514169467659191953]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.848[0;39m [33mArteryTransport(akka://myapp)[0;39m  - onAvailableImage from 10.53.2.5:43579 session -1749213752
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.850[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.888[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeRsp] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.889[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:47.930[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.215[0;39m [33mEncoder[0;39m  - sending remote message [akka.remote.artery.OutboundHandshake$HandshakeReq] to [] from []
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.251[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoin$]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.264[0;39m [33mEncoder[0;39m  - sending remote message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/]] from [Actor[akka://myapp/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.267[0;39m [33mEncoder[0;39m  - sending remote message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/]] from [Actor[akka://myapp/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.268[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp/]] from [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]]
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:48.270[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-3001.ad3.myvcn.com:2500] - Received InitJoin message from [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]], but this node is not initialized yet
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.271[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundActorRefCompression for originUid [-8206788448652082880]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.271[0;39m [33mSerialization(akka://myapp)[0;39m  - Using serializer [akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoinNack]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.272[0;39m [33mInboundManifestCompression[0;39m  - Initializing InboundManifestCompression for originUid [-8206788448652082880]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.272[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp/]] from [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]]
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:48.272[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-3001.ad3.myvcn.com:2500] - Received InitJoin message from [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]], but this node is not initialized yet
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.272[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [ActorSelectionMessage(akka.cluster.InternalClusterAction$InitJoin$)] to [Actor[akka://myapp/]] from [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]]
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:48.273[0;39m [33mCluster(akka://myapp)[0;39m  - Cluster Node [akka://myapp@gw-3001.ad3.myvcn.com:2500] - Received InitJoin message from [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]], but this node is not initialized yet
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.278[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]] from [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon#1150277362]]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.279[0;39m [33mMessageDispatcher(akka://myapp)[0;39m  - received message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp/system/cluster/core/daemon/joinSeedNodeProcess-1#-1470298433]] from [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon#2043566707]]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.281[0;39m [33mEncoder[0;39m  - sending remote message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]] from [Actor[akka://myapp/system/cluster/core/daemon#-728755459]]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.281[0;39m [33mEncoder[0;39m  - sending remote message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp@gw-1001.ad1.myvcn.com:2500/system/cluster/core/daemon/firstSeedNodeProcess-1#1843721954]] from [Actor[akka://myapp/system/cluster/core/daemon#-728755459]]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:48.282[0;39m [33mEncoder[0;39m  - sending remote message [akka.cluster.InternalClusterAction$InitJoinNack] to [Actor[akka://myapp@gw-2001.ad2.myvcn.com:2500/system/cluster/core/daemon/joinSeedNodeProcess-1#1234843309]] from [Actor[akka://myapp/system/cluster/core/daemon#-728755459]]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.757[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.758[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.787[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding/storesCoordinator actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.793[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/sharding/stores actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.880[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.882[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.883[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.884[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.886[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/storeViewQueryActor router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|WARN [32m20:06:49.935[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.960[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/healthchecker actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.960[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/healthchecker actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.965[0;39m [33mJournalComponents$[0;39m  - creating read journal: jdbc-read-journal
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.965[0;39m [33mJournalComponents$[0;39m  - connection string: jdbc:mysql://localhost:3306/app?cachePrepStmts=true&cacheCallableStmts=true&cacheServerConfiguration=true&useLocalSessionState=true&elideSetAutoCommits=true&alwaysSendSetIsolation=false&enableQueryTimeouts=false&connectionAttributes=none&verifyServerCertificate=false&useSSL=false&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:49.971[0;39m [33mPersistenceQuery[0;39m  - Create plugin: jdbc-read-journal akka.persistence.jdbc.query.JdbcReadJournalProvider
+gw-3001.log|{"gw-3001.log": 1514833200}|WARN [32m20:06:49.998[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.009[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/recoveryPermitter actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.009[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/recoveryPermitter actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:50.012[0;39m [33mPersistence(akka://myapp)[0;39m  - Auto-starting journal plugin `jdbc-journal`
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.014[0;39m [33mPersistence(akka://myapp)[0;39m  - Create plugin: jdbc-journal akka.persistence.jdbc.journal.JdbcAsyncWriteJournal
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.037[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-journal actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.037[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-journal actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:50.053[0;39m [33mPersistence(akka://myapp)[0;39m  - Auto-starting snapshot store `jdbc-snapshot-store`
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.053[0;39m [33mPersistence(akka://myapp)[0;39m  - Create plugin: jdbc-snapshot-store akka.persistence.jdbc.snapshot.JdbcSnapshotStore
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.057[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-snapshot-store actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.058[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/jdbc-snapshot-store actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|WARN [32m20:06:50.084[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-3001.log|{"gw-3001.log": 1514833200}|WARN [32m20:06:50.088[0;39m [33mHikariConfig[0;39m  - The initializationFailFast propery is deprecated, see initializationFailTimeout
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.705[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.706[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.835[0;39m [33mActorMonitors$[0;39m  - tracking myapp/user/pool-master/PoolInterfaceActor-0 actor: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:50.847[0;39m [33mPoolGateway[0;39m  - (Re-)starting host connection pool to dev.identity.com:443
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:50.944[0;39m [33mPlay[0;39m  - Application started (Prod)
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.088[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-TCP/selectors router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.125[0;39m [33mTcpListener[0;39m  - Successfully bound to /0.0.0.0:9000
+gw-3001.log|{"gw-3001.log": 1514833200}|INFO [32m20:06:51.139[0;39m [33mAkkaHttpServer[0;39m  - Listening for HTTP on /0.0.0.0:9000
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.199[0;39m [33mPoolGateway[0;39m  - InputBuffer (max-open-requests = 32) now filled with 1 request after enqueuing GET  Empty
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.207[0;39m [33mPoolGateway[0;39m  - [0] Unconnected -> Loaded(1)
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.227[0;39m [33mPoolGateway[0;39m  - [0] <unconnected> Establishing connection...
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.274[0;39m [33mPoolGateway[0;39m  - [0] <unconnected> pushing request to connection: GET / Empty
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.292[0;39m [33mTcpOutgoingConnection[0;39m  - Resolving dev.identity.com before connecting
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.311[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.312[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.313[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.313[0;39m [33mActorMonitors$[0;39m  - tracking myapp/system/IO-DNS/inet-address router: true actor-group: List()
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.318[0;39m [33mSimpleDnsManager[0;39m  - Resolution request for dev.identity.com from Actor[akka://myapp/system/IO-TCP/selectors/$a/1#-672275471]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.348[0;39m [33mTcpOutgoingConnection[0;39m  - Attempting connection to [dev.identity.com/107.23.161.90:443]
+gw-3001.log|{"gw-3001.log": 1514833200}|DEBUG [32m20:06:51.353[0;39m [33mTcpOutgoingConnection[0;39m  - Connection established to [dev.identity.com:443]
+gw-3001.log|{"gw-3001.log": 1514833200}|WARN [32m20:06:51.558[0;39m [33mActorSystemImpl[0;39m  - Illegal header: Illegal 'strict-transport-security' header: Invalid input 'EOI', expected OWS or token0 (line 1, column 37): max-age=15724800; includeSubDomains;
