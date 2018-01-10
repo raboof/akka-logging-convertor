@@ -6,37 +6,27 @@ import scala.util.Try
 
 object MergeTs extends App {
 
-  val hosts = Seq("gw-1001", "gw-2001", "gw-3001")
-  val sources = hosts.flatMap(host => Source.fromResource(s"$host.log").getLines.toList.map(event => (host, event)))
-
-  val logs = sources.flatMap {
-    case (name, event) => Try(name, event, parseTimestamp(event)).toOption.toList
-  }.sortBy(_._3).toList
-
+  val input = Source.fromResource(s"ClusterSingletonManagerLeaveMultiJvm.log").getLines.toList
+    .flatMap(line => parseLine(line).toOption)
+    
+  def parseLine(line: String) = Try {
+    val Array(rest, nodeId) = line.split("\\] at \\[")
+    val Array(rest2, clocksAndTombs) = rest.split("\\), version = VectorClock\\(")
+    val Array(_, gossip) = rest2.split("Updated gossip to \\[Gossip\\(")
+    val clocks = clocksAndTombs.split("\\), tombstones =")(0)
+    val jsonClocks = clocks.split(", ").map(
+      clock => {
+        val Array(node, current) = clock.split(" -> ")
+        s""" "$node": $current """
+    }).mkString("{ ", ", ", " }")
+    s"${nodeId.init}|$jsonClocks|$gossip"
+  }
+  
   new PrintWriter("out.logs") {
     write("(?<host>[^|]+)\\|(?<clock>[^|]+)\\|(?<event>.*)\\n\n")
     write("====\n")
-    @tailrec
-    def writeAll(logs: List[(String, String, Long)], currentTimestamps: Map[String, Long]): Unit = logs match {
-      case Nil => // Done.
-      case (host, event, _) :: xs =>
-        val nextTimestamps = currentTimestamps.updated(host, currentTimestamps.getOrElse(host, 0L) + 1L)
-        write(s"$host|${vc(nextTimestamps)}|$event\n")
-        writeAll(xs, nextTimestamps)
-    }
-    writeAll(logs, Map.empty)
+    write(input.mkString("\n"))
     close
   }
-
-  def vc(ts: Map[String, Long]): String =
-    hosts.flatMap(host => ts.get(host).map(t => s""""$host": $t""")).mkString("{", ",", "}")
-
-  def parseTimestamp(logline: String): Long = {
-    val timestamp = logline.split("32m").tail.head.split(".\\[0").head
-    val Array(head, millis) = timestamp.split("\\.")
-    val Array(hours, minutes, seconds) = head.split(":")
-    millis.toLong + 1000 * (seconds.toLong + 60 * (minutes.toLong + 60 * hours.toLong))
-  }
-
 
 }
