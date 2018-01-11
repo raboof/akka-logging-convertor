@@ -1,8 +1,6 @@
 import java.io.PrintWriter
 
-
 object MultiJvmToJson extends App {
-
   if (args.size < 2) {
     println("""Usage:
       sbt "run input1.txt input2.txt outfile.json"
