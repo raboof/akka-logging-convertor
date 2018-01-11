@@ -10,31 +10,43 @@ object MultiJvmToJson extends App {
 
   // It would be nice to be able to recognise which test each line belongs to.
   // https://github.com/sbt/sbt-multi-jvm/pull/44
-  case class Line(jvm: Int, level: String, `@timestamp`: String, system: String, thread: String, `class`: String, message: String)
+  case class Line(jvm: Int, testClass: String, role: String, address: String, level: String, `@timestamp`: String, thread: String, source: String, message: String)
+  implicit val formatter = jsonFormat9(Line)
 
-  def parseLine(line: String): Try[Line] = Try {
-    // Perhaps we should append lines that do start with [JVM but don't follow the log pattern otherwise to the message of the previous line.
-    val Array(jvm, level, timestamp, systemAndThread, rest) = line.split("\\] \\[")
-    val Array(system, thread) = systemAndThread.split("-")
-    Line(jvm.drop(5).toInt, level, parseTimestamp(timestamp), system, thread, rest.split("\\] ")(0), rest.split("\\] ").tail.mkString("] "))
+  def parseLine(line: String, roles: Map[String, String], addresses: Map[String, String]): Try[Line] = Try {
+    // Perhaps we should append lines that do start with [JVM but don't follow the log pattern otherwise to the message of the previous line?
+    line match {
+      case re"\[JVM-(\d+)$jvmId-?([^]]*)$testClass\] \[([^]]*)$level\] \[([^]]*)$timestamp\] \[([^]]*)$thread\] \[([^]]*)$source\] (.*)$message" =>
+        Line(jvmId.toInt, testClass, roles(s"JVM-$jvmId-$testClass"), addresses(s"JVM-$jvmId-$testClass"), level, parseTimestamp(timestamp), thread, source, message)
+    }
   }
-
-  implicit val formatter = jsonFormat7(Line)
-
-  val logs = Source.fromResource("consoleText")
+  
+  val lines = Source.fromResource("akka-cluster-tools-multi-jvm-test.log")
     .getLines()
-    .flatMap(line => parseLine(line).toOption)
+    .toList
+  
+  val roles = lines.collect {
+    case re"\[(.*?)$jvm\].*on node '([^']+)$role'.*" => (jvm, role)
+  }.toMap
+  val addresses = lines.collect {
+    case re"\[(.*?)$jvm\].*Remoting started; listening on addresses :\[([^]]+)$address\]" => (jvm, address)
+  }.toMap
+  
+  val logs = lines
+    .flatMap(line => parseLine(line, roles, addresses).toOption)
     .map(_.toJson.compactPrint)
     .mkString("\n")
 
   new PrintWriter("out.logs") {
     write(logs); close }
 
-  def parseTimestamp(stamp: String): String = {
-    val Array(date, time) = stamp.split(" ")
-    val Array(month, day, year) = date.split("/")
-    Seq(year, month, day).mkString("-") + "T" + time + "Z"
+  def parseTimestamp(stamp: String): String = stamp match {
+    case re"(\d+)$month/(\d+)$day/(\d+)$year (.*)$time" =>
+      Seq(year, month, day).mkString("-") + "T" + time + "Z"
   }
 
+  implicit class RegexHelper(val sc: StringContext) extends AnyVal {
+    def re: scala.util.matching.Regex = sc.parts.mkString.r
+  }
 
 }
