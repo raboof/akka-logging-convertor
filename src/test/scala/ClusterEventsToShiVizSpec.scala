@@ -11,7 +11,7 @@ class ClusterEventsToShiVizSpec extends WordSpec with Matchers {
         val lines = Parser.parse("", source)
         lines.size should be(294)
         val shiviz = ClusterShiVizInterpreter.interpret(lines)
-        shiviz.size should be(5819)
+        shiviz.size should be(70)
     }
   }
 }

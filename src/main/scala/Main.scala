@@ -14,6 +14,6 @@ object MultiJvmToJson extends App {
       case "shiviz" => ClusterShiVizInterpreter.interpret(lines)
     }
     new PrintWriter(target) {
-      write(result); close }
+      write(result.mkString("\n")); close }
   }
 }

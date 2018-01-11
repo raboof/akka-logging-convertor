@@ -8,9 +8,10 @@ object ClusterShiVizInterpreter {
   type Process = String
   case class ShiVizLine(process: Process, mark: Option[ShiVizMark], refersBackTo: Option[ShiVizMark], message: String)
 
-  def interpret(lines: Seq[Line]): String = {
+  def interpret(lines: Seq[Line]): List[String] = {
     val interpreted = lines.flatMap(line => interpretLine(line).toOption).toList
-    
+    val interpretedWithOwnClock = addOwnClocks(interpreted)
+
     val names: Map[Process, String] = interpreted.flatMap { line => line.mark match {
       case Some(Starting(address)) => Some((line.process, address.split(":").last))
       case _ => None
@@ -23,8 +24,6 @@ object ClusterShiVizInterpreter {
           names.get(other).getOrElse(other)
     }
     
-    val interpretedWithOwnClock = addOwnClocks(interpreted)
-
     // TODO perhaps check for duplicate marks?
     val marks: Map[ShiVizMark, (Process, Int)] =
       interpretedWithOwnClock.flatMap {
@@ -70,9 +69,8 @@ object ClusterShiVizInterpreter {
         val clock = updatedClocks(line.process).map { case (process, version) => s""" "${name(process)}": $version """ }.mkString("{", ", ", "}")
         s"${name(line.process)}|$clock|${line.message}" :: writeAll(updatedClocks, xs)
     }
-    val output = writeAll(Map.empty.withDefaultValue(Map.empty.withDefaultValue(0)), interpretedWithOwnClock)
     
-    ("(?<host>[^|]+)\\|(?<clock>[^|]+)\\|(?<event>.*)\\n" :: "====" :: output).mkString("\n")
+    "(?<host>[^|]+)\\|(?<clock>[^|]+)\\|(?<event>.*)\\n" :: "====" :: writeAll(Map.empty.withDefaultValue(Map.empty.withDefaultValue(0)), interpretedWithOwnClock)
   }
   
   def interpretLine(line: Line): Try[ShiVizLine] = Try {

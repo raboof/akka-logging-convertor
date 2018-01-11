@@ -25,7 +25,7 @@ class ConsoleOutputParserSpec extends WordSpec with Matchers {
         val lines = Parser.parse("gw-1001", source)
         // Successfully parse 1877 lines:
         lines.size should be(4364)
-        lines.head should be(Line(0, "", "gw-1001", "akka://myapp@gw-1001.ad1.myvcn.com:2500", "INFO", "2018-1-11T20:06:43.861Z", "", "ROOT", "Using configurator: play.api.libs.logback.LogbackLoggerConfigurator@4b9df8a"))
+        lines.head should be(Line(0, "", "gw-1001", "akka://myapp@gw-1001.ad1.myvcn.com:2500", "INFO", s"${date}T20:06:43.861Z", "", "ROOT", "Using configurator: play.api.libs.logback.LogbackLoggerConfigurator@4b9df8a"))
     }
   }
 }
