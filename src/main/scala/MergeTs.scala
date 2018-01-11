@@ -52,17 +52,26 @@ object MergeTs extends App {
       case re"ClusterSingletonManager state change \[(.*)$previousState \-> (.*)$newState\]" =>
         // No need to mark explicitly, but we do want to see those in the output.
         ("CS-" + line.jvm + "-" + line.actorPath.split("/user/")(1), None, None)
+      case re"LeaderChanged.*" =>
+        (line.jvm.toString, None, None)
     }
     ShiVizLine(process, mark, backReference, line.`@timestamp` + ": " + line.message)
   }
   
+  // Could remove tail recursion
+  def addOwnClocks(lines: List[ShiVizLine], currentClocks: Map[Process, Int] = Map.empty.withDefaultValue(1)): List[(Int, ShiVizLine)] = lines match {
+    case Nil => Nil
+    case x :: xs =>
+      (currentClocks(x.process), x) :: addOwnClocks(xs, currentClocks.updateWith(x.process, _ + 1))
+  }
+
   sealed trait ShiVizMark
   case class Starting(nodeAddress: String) extends ShiVizMark
   case class NodeStateChange(nodeAddress: String, state: String) extends ShiVizMark
-  
+
   type Process = String
   case class ShiVizLine(process: Process, mark: Option[ShiVizMark], refersBackTo: Option[ShiVizMark], message: String)
-  
+
   val names: Map[Process, String] = interpreted.flatMap { line => line.mark match {
     case Some(Starting(address)) => Some((line.process, address.split(":").last))
     case _ => None
@@ -75,16 +84,47 @@ object MergeTs extends App {
         names.get(other).getOrElse(other)
   }
   
+  val interpretedWithOwnClock = addOwnClocks(interpreted)
+
+  // TODO perhaps check for duplicate marks?
+  val marks: Map[ShiVizMark, (Process, Int)] =
+    interpretedWithOwnClock.flatMap {
+      case (version, line) => line.mark match {
+        case None => None
+        case Some(mark) => Some(mark -> (line.process, version))
+    }}.toMap
+
+  val backrefsCollectedWhileParsing =
+    interpretedWithOwnClock.flatMap {
+      case (version, line) => line.refersBackTo.flatMap(mark => marks.get(mark).map(pi => (line.process, version) -> pi))
+    }.toMap
+
+  val clusterSingletonBackRefs = interpretedWithOwnClock
+    .filter { case (_, l) => !l.message.contains("Start ->") }
+    .flatMap {
+    case (version, line @ ShiVizLine(re"CS-(\d+)$jvmid.*", _, _, _)) =>
+      // Very rough heuristic: cluster change before singleton transition might be its cause..
+      interpretedWithOwnClock
+        .takeWhile { case (_, l) => l != line }
+        .filter { case (_, l) => l.process == jvmid }
+        .filter { case (_, l) => l.message.contains(": Member")}
+        .lastOption
+        .map { case (v, l) => (line.process, version) -> (l.process, v) }
+    case _ => None
+  }.toMap
+
+  val backrefs: Map[(Process, Int), (Process, Int)] = backrefsCollectedWhileParsing ++ clusterSingletonBackRefs
+
   new PrintWriter("out.logs") {
     write("(?<host>[^|]+)\\|(?<clock>[^|]+)\\|(?<event>.*)\\n\n")
     write("====\n")
     @tailrec
-    def writeAll(vectorClocks: Map[Process, Map[Process, Int]], lines: List[ShiVizLine], marks: Map[ShiVizMark, (Process, Int)]): Unit = lines match {
+    def writeAll(vectorClocks: Map[Process, Map[Process, Int]], lines: List[(Int, ShiVizLine)]): Unit = lines match {
       case Nil => //done
-      case line :: xs =>
+      case (version, line) :: xs =>
         val updatedClocks = vectorClocks.updateWith(line.process, clocks => {
           val incremented = increment(clocks, line.process)
-          line.refersBackTo.flatMap(mark => marks.get(mark)) match {
+          backrefs.get((line.process, version)) match {
             case None => incremented
             case Some((line.process, _)) => incremented
             case Some((process, version)) => incremented.updateWith(process, _ => version)
@@ -93,9 +133,9 @@ object MergeTs extends App {
         
         val clock = updatedClocks(line.process).map { case (process, version) => s""" "${name(process)}": $version """ }.mkString("{", ", ", "}")
         write(s"${name(line.process)}|$clock|${line.message}\n")
-        writeAll(updatedClocks, xs, marks ++ line.mark.map(_ -> (line.process, updatedClocks(line.process)(line.process))))
+        writeAll(updatedClocks, xs)
     }
-    writeAll(Map.empty.withDefaultValue(Map.empty.withDefaultValue(0)), interpreted, Map.empty)
+    writeAll(Map.empty.withDefaultValue(Map.empty.withDefaultValue(0)), interpretedWithOwnClock)
     close
   }
   
