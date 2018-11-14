@@ -9,9 +9,9 @@ The main class accepts multiple input files and 1 output file.
 It auto-detects the input format and determines the desired output format based
 on the file extension:
 
-    sbt run 'in1.txt in2.txt out.json'
+    sbt "run in1.txt in2.txt out.json"
 
-    sbt run 'in1.txt in2.txt out.shiviz'
+    sbt "run in1.txt in2.txt out.shiviz"
 
 ## Kibana
 
